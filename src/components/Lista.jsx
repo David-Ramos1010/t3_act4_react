@@ -48,7 +48,7 @@ function ListaTareas() {
       {tareas.length === 0 ? (
         <p>No hay tareas todavia.</p>
       ) : (
-        // se pinta la pnatalla
+        // se pinta la pantalla
         <ul>
           {/* Renderizado de lista con map, cada elemento necesita una key unica */}
           {tareas.map((tarea, index) => (
