@@ -79,7 +79,7 @@ function Contador() {
   const [cuenta, setCuenta] = useState(0);
 
   return (
-    <div className="Sube y Baja de Numeros">
+    <div className="---">
       <h2>Contador: {cuenta}</h2>
       <button onClick={() => setCuenta(cuenta + 1)}>Sumar</button>
     </div>
