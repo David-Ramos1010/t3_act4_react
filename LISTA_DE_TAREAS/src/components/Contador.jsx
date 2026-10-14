@@ -11,8 +11,10 @@ function Contador() {
     <div className="Sube y Baja de Numeros">
       <h2>Contador: {cuenta}</h2>
       <button onClick={() => setCuenta(cuenta + 1)}>Sumar</button>
+      {/*
       <button onClick={() => setCuenta(cuenta - 1)}>Restar</button>
       <button onClick={() => setCuenta(0)}>Reiniciar</button>
+       */}
     </div>
   );
 }

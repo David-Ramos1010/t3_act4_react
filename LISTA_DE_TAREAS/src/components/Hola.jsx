@@ -5,7 +5,7 @@
 function Hola() {
   return (
     <div>
-      <h1>React de David Efraín José Ramos</h1>
+      <h1>David Efraín<br></br>José Ramos</h1>
       <p>Aplicando lo visto en el video</p>
     </div>
   );

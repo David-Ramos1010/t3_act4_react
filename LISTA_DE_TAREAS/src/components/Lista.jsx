@@ -7,10 +7,10 @@ import { useState } from "react";
 // Ocupamos un arrgelo de tareas
 function ListaTareas() {
   const [tareas, setTareas] = useState([
-    "Aprender componentes",
-    "Aprender props",
-    "Aprender useState",
-    "Programacion Web",
+    "Terminar la actividad cuatro",
+    "Terminar la actividad cinco",
+    "Tomar una taza de café",
+    "Dormir cinco minutos",
   ]);
 
   const [texto, setTexto] = useState("");

@@ -1,26 +1,31 @@
-/*import { useState } from 'react'*/
-import './App.css'
+import Hola from "./components/Hola";
+import Tarjeta from "./components/Tarjeta";
+import Contador from "./components/Contador";
+import Lista from "./components/Lista";
+import "./App.css";
 
 function App() {
-  /*
-  const [count, setCount] = useState(0)
-  */
-  return <h1>¡Hola mundo!</h1>;
-  
-  /*(
-    
-    <>
-      <section id="center">
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
-    </>
-  )*/
+  return (
+    <div className="App">
+      {/* Componente funcional simple */}
+      <Hola />
+
+      <hr />
+
+      {/* Componente que recibe props */}
+      <Tarjeta nombre="David Ramos" edad={20} carrera="Ingeniería en Sistemas Computacionales" />
+
+      <hr />
+
+      {/* Componente con useState */}
+      <Contador />
+
+      <hr />
+
+      {/* Componente con lista dinamica (.map) */}
+      <Lista />
+    </div>
+  );
 }
 
-export default App
+export default App;
