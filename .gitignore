@@ -1,3 +1,17 @@
+#Simbologia
+# "#" = Una línea que comienza con # sirve como comentario. 
+# " " = Una línea en blanco no coincide con ningún archivo, por lo que puede servir como separador para legibilidad.
+# "*" = Un asterisco* "" coincide con cualquier cosa excepto una barra. 
+# "?" = El personaje "?" coincide con cualquier personaje excepto/ "". 
+# "[a-z], [0,9]" = La notación de rango, por ejemplo [], se puede utilizar para hacer coincidir uno de los personajes en un rango.
+# "archivo_ejemplo/" = Los espacios finales se ignoran a menos que se citen con barra invertida ("\").
+# "/archivo_ejemplo" = Si hay un separador al principio o a la mitad (o ambos) del patrón, entonces el patrón es relativo al nivel de directorio del archivo particular. gitignore en sí.
+# "raiz/archivo_ejemplo" = La barra/ "" se utiliza como separador de directorios. 
+# "**" = Dos asteriscos consecutivos (**"") en patrones coincidentes El nombre de ruta completo puede tener un significado especial.
+# "!" = Un prefijo opcional! "" que niega el patrón; cualquiera El archivo coincidente excluido por un patrón anterior se convertirá en incluido de nuevo. 
+# "\" = 14)	Un "" final/** coincide con todo lo que hay dentro. 
+
+
 # Logs
 logs
 *.log
@@ -22,3 +36,118 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#Aquí van los archivos .env que frecuentemente tienen información sencible. 
+.env
+.env.*
+!.env.example
+!.env.template
+*.local
+ 
+#Aquí van las claves privadas.
+
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+.ssh/
+
+#Aquí van las credenciales de terceros 
+
+.aws/
+.azure/
+.gcloud/
+.firebase/
+.firebaserc
+.vercel
+.netlify
+credentials.json
+service-account*.json
+secrets.json
+secrets.*.json
+.npmrc
+.yarnrc.yml
+
+#Aquí va todo lo relacionado con la base de datos.
+*.sql
+*.dump
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+
+#Dependencias 
+node_modules/
+jspm_packages/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+#Salidas
+dist/
+dist-ssr/
+build/
+out/
+.output/
+*.tsbuildinfo
+
+#Archivos auxiliares y cache
+dist/
+dist-ssr/
+build/
+out/
+.output/
+*.tsbuildinfo
+
+#Los Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+#Pruebas
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+
+#Editores
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+#Propios del sistema operativo
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+#Empaquetados locales
+*.zip
+*.tgz
+*.tar.gz
+*.rar
+*.7z
